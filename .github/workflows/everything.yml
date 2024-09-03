@@ -391,7 +391,7 @@ jobs:
           ref: ${{ matrix.ref }}
           path: source
       - name: Download CI docker image
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ci-docker ubuntu-bionic ${{ github.sha }}
       - name: Initialize containers
